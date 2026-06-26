@@ -13,6 +13,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import NotFound from './NotFound';
 
 import { getLeadBySlug } from '../utils/slugUtils';
 import {
@@ -109,9 +110,9 @@ export default function LeadPage() {
   );
 
   if (notFound) {
-    navigate('/not-found', { replace: true });
-    return null;
+    return <NotFound />;
   }
+  
 
   if (!lead) {
     return (

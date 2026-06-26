@@ -13,22 +13,25 @@ export default function NotFound() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="font-display text-8xl font-light text-stone/30 mb-8">404</div>
+        <div className="font-display text-8xl font-light text-stone/100 mb-8">!!!</div>
 
-        <div className="w-8 h-px bg-gold/30 mx-auto mb-8" />
+        <div className="w-12 h-px bg-gold/30 mx-auto mb-8" />
 
         <h1 className="font-display text-3xl font-light text-ivory/60 mb-4">
-          This page doesn't exist.
+        Private Invitation Required. 
+        This experience is accessible only through a personalised invitation.
         </h1>
 
-        <p className="text-slate text-sm font-light max-w-xs mx-auto leading-relaxed">
-          If you received a personal link and it isn't working,
-          please contact the person who sent it to you.
+        <p className="text-slate text-xl font-light max-w-xs mx-auto leading-relaxed">
+        If you've received a private EVOKE link,
+        please check that the URL is complete.
+
+        Otherwise, contact EVOKE South Goa.
         </p>
 
         <div className="mt-12 flex items-center justify-center gap-3">
           <div className="w-6 h-px bg-stone/30" />
-          <span className="font-display text-stone/30 italic text-sm">EVOKE</span>
+          <span className="font-display text-ivory/100 italic text-xl">EVOKE</span>
           <div className="w-6 h-px bg-stone/30" />
         </div>
       </motion.div>
